@@ -4,19 +4,19 @@
     - dev
 ---
 server:
-  port: 7001
+  port: 7002
 spring:
   profiles: dev
   application: microservicecloud-config-eureka-client
   
 eureka:
   instance:
-    hostname: eureka7001.com 
+    hostname: eureka7002.com 
    client:
     register-with-eureka: false
     fetch-registry: false
-    serviceUrl:
-      defaultZone: http://eureka7001.com:7001/eureka/
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/
 ---
 server:
   port: 7001
@@ -31,5 +31,5 @@ eureka:
    client:
     register-with-eureka: false
     fetch-registry: false
-    serviceUrl:
+    service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
