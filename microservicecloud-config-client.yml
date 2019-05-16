@@ -15,7 +15,8 @@ eureka:
       defaultZone: http://eureka-dev.com:7001/eureka/
       
 ---
-
+server:
+  port: 8201
 spring:
   profiles: test
   application:
